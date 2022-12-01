@@ -14,12 +14,12 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace theme_boost;
+namespace theme_boost_nead;
 
 /**
  * Unit tests for scss compilation.
  *
- * @package   theme_boost
+ * @package   theme_boost_nead
  * @copyright 2016 onwards Ankit Agarwal
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -36,7 +36,7 @@ class scss_test extends \advanced_testcase {
         set_config('pathtosassc', PHPUNIT_PATH_TO_SASSC);
 
         $this->assertNotEmpty(
-            \theme_config::load('boost')->get_css_content_debug('scss', null, null)
+            \theme_config::load('boost_nead')->get_css_content_debug('scss', null, null)
         );
     }
 }

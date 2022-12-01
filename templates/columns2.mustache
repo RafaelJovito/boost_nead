@@ -15,7 +15,7 @@
     along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 }}
 {{!
-    @template theme_boost/columns2
+    @template theme_boost_nead/columns2
 
     Admin time setting template.
 
@@ -48,7 +48,7 @@
         "hasregionmainsettingsmenu": false
     }
 }}
-{{> theme_boost/head }}
+{{> theme_boost_nead/head }}
 
 <body {{{ bodyattributes }}}>
 {{> core/local/toast/wrapper}}
@@ -57,8 +57,8 @@
 
     {{{ output.standard_top_of_body_html }}}
 
-    {{> theme_boost/navbar }}
-    {{> theme_boost/nav-drawer }}
+    {{> theme_boost_nead/navbar }}
+    {{> theme_boost_nead/nav-drawer }}
 
     <div id="page" class="container-fluid d-print-block">
         {{{ output.full_header }}}
@@ -90,20 +90,20 @@
         </div>
     </div>
     {{{ output.standard_after_main_region_html }}}
-    {{> theme_boost/footer }}
+    {{> theme_boost_nead/footer }}
 </div>
 
 </body>
 </html>
 {{#js}}
-M.util.js_pending('theme_boost/loader');
-require(['theme_boost/loader'], function() {
-    M.util.js_complete('theme_boost/loader');
+M.util.js_pending('theme_boost_nead/loader');
+require(['theme_boost_nead/loader'], function() {
+    M.util.js_complete('theme_boost_nead/loader');
 });
 
-M.util.js_pending('theme_boost/drawer');
-require(['theme_boost/drawer'], function(drawer) {
+M.util.js_pending('theme_boost_nead/drawer');
+require(['theme_boost_nead/drawer'], function(drawer) {
     drawer.init();
-    M.util.js_complete('theme_boost/drawer');
+    M.util.js_complete('theme_boost_nead/drawer');
 });
 {{/js}}

@@ -1,4 +1,4 @@
-@tool @tool_usertours @theme_boost
+@tool @tool_usertours @theme_boost_nead
 Feature: Apply tour filters to a tour for Classic
   In order to give more directed tours
   As an administrator

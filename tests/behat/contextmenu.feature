@@ -1,4 +1,4 @@
-@javascript @theme_boost
+@javascript @theme_boost_nead
 Feature: Context settings menu
   To navigate in boost theme I need to use the context settings menu
 

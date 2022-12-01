@@ -15,14 +15,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Privacy Subsystem implementation for theme_boost.
+ * Privacy Subsystem implementation for theme_boost_nead.
  *
- * @package    theme_boost
+ * @package    theme_boost_nead
  * @copyright  2018 Andrew Nicols <andrew@nicols.co.uk>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-namespace theme_boost\privacy;
+namespace theme_boost_nead\privacy;
 
 use \core_privacy\local\metadata\collection;
 
@@ -63,12 +63,12 @@ class provider implements
         $draweropennavpref = get_user_preferences(self::DRAWER_OPEN_NAV, null, $userid);
 
         if (isset($draweropennavpref)) {
-            $preferencestring = get_string('privacy:drawernavclosed', 'theme_boost');
+            $preferencestring = get_string('privacy:drawernavclosed', 'theme_boost_nead');
             if ($draweropennavpref == 'true') {
-                $preferencestring = get_string('privacy:drawernavopen', 'theme_boost');
+                $preferencestring = get_string('privacy:drawernavopen', 'theme_boost_nead');
             }
             \core_privacy\local\request\writer::export_user_preference(
-                'theme_boost',
+                'theme_boost_nead',
                 self::DRAWER_OPEN_NAV,
                 $draweropennavpref,
                 $preferencestring

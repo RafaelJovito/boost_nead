@@ -16,7 +16,7 @@
 /**
  * Add Pending JS checks to stock Bootstrap transitions.
  *
- * @module     theme_boost/pending
+ * @module     theme_boost_nead/pending
  * @copyright  2019 Andrew Nicols <andrew@nicols.co.uk>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */

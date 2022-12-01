@@ -17,8 +17,8 @@
 /**
  * A two column layout for the boost theme.
  *
- * @package   theme_boost
- * @copyright 2016 Damyon Wiese
+ * @package   theme_boost_nead
+ * @copyright 2022 Rafael Jovito
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -56,5 +56,5 @@ $templatecontext = [
 $nav = $PAGE->flatnav;
 $templatecontext['flatnavigation'] = $nav;
 $templatecontext['firstcollectionlabel'] = $nav->get_collectionlabel();
-echo $OUTPUT->render_from_template('theme_boost/columns2', $templatecontext);
+echo $OUTPUT->render_from_template('theme_boost_nead/columns2', $templatecontext);
 

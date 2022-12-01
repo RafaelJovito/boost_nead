@@ -17,8 +17,8 @@
 /**
  * A maintenance layout for the boost theme.
  *
- * @package   theme_boost
- * @copyright 2016 Damyon Wiese
+ * @package   theme_boost_nead
+ * @copyright 2022 Rafael Jovito
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -31,4 +31,4 @@ $templatecontext = [
     'output' => $OUTPUT
 ];
 
-echo $OUTPUT->render_from_template('theme_boost/maintenance', $templatecontext);
+echo $OUTPUT->render_from_template('theme_boost_nead/maintenance', $templatecontext);

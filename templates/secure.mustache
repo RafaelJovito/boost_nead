@@ -15,7 +15,7 @@
     along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 }}
 {{!
-    @template theme_boost/secure
+    @template theme_boost_nead/secure
 
     Boost secure layout template.
 
@@ -34,7 +34,7 @@
          }
     }
 }}
-{{> theme_boost/head }}
+{{> theme_boost_nead/head }}
 
 <body {{{ bodyattributes }}}>
 {{> core/local/toast/wrapper}}
@@ -43,7 +43,7 @@
 
     {{{ output.standard_top_of_body_html }}}
 
-    {{>theme_boost/navbar-secure}}
+    {{>theme_boost_nead/navbar-secure}}
 
     <div id="page" class="container-fluid">
         {{! Secured full header }}
@@ -88,8 +88,8 @@
 </body>
 </html>
 {{#js}}
-M.util.js_pending('theme_boost/loader');
-require(['theme_boost/loader'], function() {
-    M.util.js_complete('theme_boost/loader');
+M.util.js_pending('theme_boost_nead/loader');
+require(['theme_boost_nead/loader'], function() {
+    M.util.js_complete('theme_boost_nead/loader');
 });
 {{/js}}

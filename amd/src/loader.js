@@ -16,7 +16,7 @@
 /**
  * Template renderer for Moodle. Load and render Moodle templates with Mustache.
  *
- * @module     theme_boost/loader
+ * @module     theme_boost_nead/loader
  * @copyright  2015 Damyon Wiese <damyon@moodle.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  * @since      2.9
@@ -88,7 +88,7 @@ const enableTooltips = () => {
     });
 };
 
-const pendingPromise = new Pending('theme_boost/loader:init');
+const pendingPromise = new Pending('theme_boost_nead/loader:init');
 
 // Add pending promise event listeners to relevant Bootstrap custom events.
 setupBootstrapPendingChecks();

@@ -15,21 +15,21 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Privacy tests for theme_boost.
+ * Privacy tests for theme_boost_nead.
  *
- * @package    theme_boost
+ * @package    theme_boost_nead
  * @category   test
  * @copyright  2018 Adrian Greeve <adriangreeve.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-namespace theme_boost\privacy;
+namespace theme_boost_nead\privacy;
 
 defined('MOODLE_INTERNAL') || die();
 
-use theme_boost\privacy\provider;
+use theme_boost_nead\privacy\provider;
 
 /**
- * Unit tests for theme_boost/classes/privacy/policy
+ * Unit tests for theme_boost_nead/classes/privacy/policy
  *
  * @copyright  2018 Adrian Greeve <adriangreeve.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
@@ -55,10 +55,10 @@ class provider_test extends \core_privacy\tests\provider_testcase {
         $writer = \core_privacy\local\request\writer::with_context($contextuser);
         $this->assertTrue($writer->has_any_data());
 
-        $exportedpreferences = $writer->get_user_preferences('theme_boost');
+        $exportedpreferences = $writer->get_user_preferences('theme_boost_nead');
         $this->assertCount(1, (array) $exportedpreferences);
         $this->assertEquals('false', $exportedpreferences->{provider::DRAWER_OPEN_NAV}->value);
-        $this->assertEquals(get_string('privacy:drawernavclosed', 'theme_boost'),
+        $this->assertEquals(get_string('privacy:drawernavclosed', 'theme_boost_nead'),
                 $exportedpreferences->{provider::DRAWER_OPEN_NAV}->description);
 
         // Add a user home page preference for the User.
@@ -70,10 +70,10 @@ class provider_test extends \core_privacy\tests\provider_testcase {
         $writer = \core_privacy\local\request\writer::with_context($contextuser);
         $this->assertTrue($writer->has_any_data());
 
-        $exportedpreferences = $writer->get_user_preferences('theme_boost');
+        $exportedpreferences = $writer->get_user_preferences('theme_boost_nead');
         $this->assertCount(1, (array) $exportedpreferences);
         $this->assertEquals('true', $exportedpreferences->{provider::DRAWER_OPEN_NAV}->value);
-        $this->assertEquals(get_string('privacy:drawernavopen', 'theme_boost'),
+        $this->assertEquals(get_string('privacy:drawernavopen', 'theme_boost_nead'),
                 $exportedpreferences->{provider::DRAWER_OPEN_NAV}->description);
     }
 }

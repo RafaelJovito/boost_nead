@@ -14,7 +14,7 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-namespace theme_boost\output;
+namespace theme_boost_nead\output;
 
 use moodle_url;
 
@@ -23,7 +23,7 @@ defined('MOODLE_INTERNAL') || die;
 /**
  * Renderers to align Moodle's HTML with that expected by Bootstrap
  *
- * @package    theme_boost
+ * @package    theme_boost_nead
  * @copyright  2012 Bas Brands, www.basbrands.nl
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */

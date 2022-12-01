@@ -1,4 +1,4 @@
-@javascript @theme_boost
+@javascript @theme_boost_nead
 Feature: Region main settings menu
   To navigate in boost theme I need to use the region main settings menu
 
