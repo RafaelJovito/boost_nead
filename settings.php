@@ -23,7 +23,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 if ($ADMIN->fulltree) {
-    $settings = new theme_boost_nead_admin_settingspage_tabs('themesettingboost', get_string('configtitle', 'theme_boost_nead'));
+    $settings = new theme_boost_nead_admin_settingspage_tabs('themesettingboost_nead', get_string('configtitle', 'theme_boost_nead'));
     $page = new admin_settingpage('theme_boost_nead_general', get_string('generalsettings', 'theme_boost_nead'));
 
     // Preset.
