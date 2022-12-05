@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * A one column layout for the boost nead theme.
+ * A one column layout for the Funcern Nead theme.
  *
  * @package   theme_boost_nead
  * @copyright 2022 Rafael Jovito

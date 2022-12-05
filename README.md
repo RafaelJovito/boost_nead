@@ -1,2 +1,2 @@
 # boost_nead
-Theme Moodle Boost Nead
+Theme Moodle Funcern Nead
